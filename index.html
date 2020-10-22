@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- my css -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Email and Dice</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="email">
+          <div class="col-xs-12">
+            <h2>Inserisci la tua email:</h2>
+              <input id="emailEntered" type="text" name="email" value="">
+              <button id="searchButton" type="button" name="button">Ricerca</button>
+              <div id="message"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="dices">
+          <div class="col-xs-12">
+            <h1>Clicca il bottone per provare a vincere contro il PC!!</h1>
+            <button id="dicesButton" type="button" name="button">Tira i Dadi!</button>
+          </div>
+          <div class="col-xs-4">
+            <h1>Tuo Dado</h1>
+            <div id="myDice"></div>
+          </div>
+          <div class="col-xs-4">
+            <h2 id="whoWin">
+              Chi vincerà?
+            </h2>
+          </div>
+          <div class="col-xs-4">
+            <h1>Dado PC</h1>
+            <div id="pcDice"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/script.js" charset="utf-8"></script>
+  </body>
+</html>
